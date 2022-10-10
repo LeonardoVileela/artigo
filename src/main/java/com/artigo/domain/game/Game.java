@@ -17,6 +17,12 @@ public class Game {
 
     private static final long serialVersionUID = 1L;
 
+    public Game(UUID id, String name, Categoria categoria) {
+        this.id = id;
+        this.name = name;
+        this.categoria = categoria;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
